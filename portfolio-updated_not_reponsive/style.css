@@ -1,0 +1,1047 @@
+body{
+  background-color: black;
+}
+#navbarinner{
+    background-color: black;
+    margin-top: -10px;
+}
+#portfolio{
+    font-weight: 900;
+    color: white;
+    pointer-events: none;
+}
+.portfoliored{
+    color: red;
+}
+
+#home:hover {
+    
+    background-color: grey;
+    
+  }
+  #home:hover {
+    
+    background-color: grey;
+    
+  }
+  #about:hover {
+    
+    background-color: grey;
+    
+  }
+  #skill:hover {
+    
+    background-color: grey;
+    
+  }
+  #project:hover {
+    
+    background-color: grey;
+    
+  }
+  #contact:hover {
+
+    background-color: grey;
+  }
+  /* a:hover{
+    background-color: grey;
+  } */
+
+#home{
+    
+    font-weight: 900;
+    font-weight: 700;
+    color: white;
+}
+#about{
+    font-weight: 700;
+    color: white;
+}
+#skill{
+    font-weight: 700;
+    color: white;
+}
+#project{
+    font-weight: 700;
+    color: white;
+}
+#contact{
+    font-weight: 700;
+    color: white;
+}
+#btnnavbar{
+    color: white;
+    background-color: white;
+}
+
+/* navbar End */
+
+/* banner Start */
+.mainbanner{
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    /* background-color: yellow; */
+     
+    width: 100%;
+    height: 480px;
+    display: flex;
+    
+
+    /* use for aboutme portion */
+   position: relative;
+
+     /* use for aboutme portion */
+}
+
+
+.bannerone{
+    /* border: 2px solid red; */
+    
+    background-color: black;
+    width: 55%;
+    height: 480px;
+    text-align: center; 
+    /* background-image: url(images/profile2.jpg); */
+ 
+ 
+}
+
+.innerbannerone{
+    margin-top: 150px;  
+}
+  
+.fa-linkedin {
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px; 
+    
+}
+.fa-github {
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px; 
+   
+}
+.fa-envelope{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px; 
+   
+}
+.fa-whatsapp{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px; 
+   
+}
+
+.fa-facebook{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 25px; 
+   
+}
+
+.bheading{
+    color: white;
+
+}
+.bname{
+    color: red;
+    font-family: 'Arial';
+    /* , Helvetica, Arial, sans-serif */
+}
+.banimation{
+    color: white;
+    
+}
+
+
+/* animation 1  for bannerone*/
+.bname {
+    display: inline-block;
+    animation-name: moveUpDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+   /* 2 animation for bannerone*/
+
+   .banimation {
+    animation: slide-text 2s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes slide-text {
+    0% {
+      transform: translateX(-5%);
+    }
+    100% {
+      transform: translateX(2%);
+    }
+  }
+  
+   
+   /* animation ended */
+.btext{
+    color: white;
+    
+   
+    font-family:Arial, Helvetica, sans-serif;
+    /* font-weight: 500; */
+    
+}
+.btnone{
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.btnone:hover {
+background-color: grey;
+}
+.btntwo{
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+.btntwo a{
+text-decoration: none;
+color: white;
+}
+.btntwo:hover {
+    background-color: grey;
+    }
+
+
+.bannertwo{
+    
+    background-color: black;
+    width: 45%;
+    height: 480px;
+
+    
+   
+}
+
+.btwoimg{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+   margin-right: 100px;
+   margin-top: 25px;
+   border: 10px dotted red;
+}
+
+/* animation for image start */
+
+  /* 1 animation image*/
+   
+   /* Set the banner container to relative position */
+.bannertwo {
+    position: relative;
+    width: 45%;
+    height: 480px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Set the banner image container to absolute position */
+  .bannertwo .btwoimg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Set the banner image to 100% width and auto height */
+  .bannertwo .btwoimg {
+    width:60%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    border: 10px dotted red;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Add animation to the image */
+  .bannertwo:hover .btwoimg {
+    transform: rotate(360deg);
+  }
+  
+  /* Media queries for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .bannertwo {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+  
+    .bannertwo .btwoimg-container {
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+    .bannertwo .btwoimg {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+  }
+  
+/* 2 animation image start */
+
+.bannertwo {
+    background-color: black;
+    width: 45%;
+    height: 480px;
+  }
+  
+  .btwoimg {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    margin-right: 100px;
+    margin-top: 25px;
+    position: relative;
+  }
+  
+  /* Create keyframes for border color change */
+  @keyframes border-color-change {
+    0% { border-color: red; }
+    15% { border-color: rgb(44, 74, 162); }
+    25% { border-color: white; }
+    40% { border-color: rgb(17, 168, 195); }
+    50% { border-color: rgba(50, 205, 84, 0.601) }
+    65% { border-color: #a60722; }
+    75% { border-color: yellow; }
+    100% { border-color: lime }
+  }
+  
+  /* Apply animation to dotted border */
+  .btwoimg {
+    animation-name: border-color-change;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-width: 12px;
+    border-style: dotted;
+    border-color: red;
+  }
+  
+/* animation for image end */
+
+@media  (max-width: 1100px){
+
+    #home{
+      font-size:x-large;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #about{
+      font-size:x-large;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #skill{
+      font-size:x-large;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #project{
+      font-size:x-large;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    #contact{
+      font-size:x-large;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .mainbanner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      
+    }
+    .bannerone{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 170px;
+    }
+    .bannertwo{
+        /* background-color: yellow; */
+        background-color: black;
+        width: 100%;
+        margin: 0;
+        
+    }
+    .btwoimg {
+        width: 100%;
+        margin: 0;
+        
+    }
+    .btext{
+        
+        padding-bottom: 5px;
+        padding-top: 5px;
+        line-height: 1.5;
+    } 
+}
+@media  (max-width: 1100px){
+    .btwoimg {
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+/* banner End */
+
+
+
+/* about me portion start */
+ .mainaboutme{
+
+  width: 100%;
+  background-color: black;
+  /* border: 5px solid blue; */
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.aboutmeone{
+  background-color: black;
+  width:  35%;
+  height: 500px;
+}
+
+.aboutmetwo{
+  background-color: black;
+  width: 49%;
+  height: 500px;
+}
+.aboutmeone img{
+  width: 100%;
+  height: 500px;
+  border-radius: 70px;
+}
+
+.headingone{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 900;
+  color: white;
+
+}
+
+.headingtwo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  
+}
+.headingthree{
+  color: grey;
+  font-size: x-large;
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.description{
+ color: grey;
+  font-size: larger;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: justify;
+}
+
+ .btnthree{
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  
+ 
+ }
+
+ .btnthree a{
+  text-decoration: none;
+  color: white;
+  }
+
+  
+ /* media query for adjusting content in aboutmetwo */
+/* media query with chatgpt */
+@media (max-width: 1100px) {
+  .aboutmetwo {
+    width: 100%;
+    height: auto;
+    margin-top: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headingone {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .headingtwo {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 0;
+  }
+
+  .headingthree {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 0;
+  }
+  
+  .description {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .btnthree {
+    margin-bottom: 50px;
+    line-height: 0;
+  }
+}
+  
+
+
+/* media query with chatgpt */
+
+@media  (max-width: 1100px){
+
+.mainaboutme{
+  /* background-color: red; */
+  margin-top: 510px;
+  flex-direction: column-reverse;
+}
+
+.aboutmeone{
+
+width: 100%;
+
+}
+
+.aboutmetwo{
+
+  width: 100%;
+
+}
+
+}
+
+/* MY skill portion starts */
+
+
+.mainskill{
+  width: 100%;
+  height: 700px;
+  /* border: 5px solid yellow; */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.skillone{
+  width: 45%;
+  height: 600px;
+  /* border: 5px solid black; */
+  background-color: black;
+
+}
+
+.skillheadingone {
+  color: white;
+ font-family:'Times New Roman', Times, serif;
+
+  margin-bottom: 10px;
+  line-height: 0;
+}
+
+.skilldescription {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: justify;
+  color: grey;
+}
+
+.skillbtnthree {
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  
+ }
+
+ .skillbtnthree a{
+  text-decoration: none;
+  color: white;
+  }
+
+
+
+.skilltwo{
+  width: 45%;
+  height: 600px;
+  /* border: 5px solid black; */
+  background-color: black;
+}
+
+
+/* @media  (max-width: 760px){
+  .mainskill{
+       
+  }
+} */
+
+@media  (max-width: 760px){
+
+  .mainskill{
+      margin-top: 810px;
+      flex-direction: column-reverse;
+    }
+    .skillone{
+      width: 100%;
+     }
+     
+     .skilltwo{
+       width: 100%;
+     }
+
+  }
+
+
+
+@media  (max-width: 1100px)and (min-width: 760px){
+
+.mainskill{
+    margin-top: 610px;
+    flex-direction: column-reverse;
+  }
+
+.skillone{
+ width: 100%;
+}
+
+.skilltwo{
+  width: 100%;
+}
+
+
+.skillheadingone {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skilldescription {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.skillbtnthree {
+  margin-bottom: 50px;
+  line-height: 0;
+  
+ }
+
+
+}
+
+@media  (max-width: 470px){
+
+  .skillheadingone {
+    font-size: 10px;
+    /* color: red; */
+    font-family:'Times New Roman', Times, serif;
+     /* margin-bottom: 5px; */
+     line-height: 0;
+  }
+  .skilldescription {
+    font-size: 5px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    /* line-height: 0.5; */
+    text-align: justify;
+  }
+  .skillbtnthree {
+    width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  }
+}
+@media  (max-width: 440px){
+ 
+    .skillheadingone {
+      font-size: 10px;
+      /* color: red; */
+      
+       
+       line-height: 0;
+    }
+ 
+
+  .skillbtnthree {
+    width: 100px;
+  height: 25px;
+  /* border-radius: 10px; */
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  margin-top: 0;
+  }
+}
+
+
+
+@media  (max-width: 1230px){
+  .skilldescription {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
+/* MY skill portion END */
+
+/* my projects portion starts  */
+   
+.mainproject{
+  width: 100%;
+  /* border: 5px solid red; */
+  /* background-color: olivedrab; */
+  background-color: black;
+  height: 700px;
+}
+
+.projectone{
+ width: 100%;
+ height: 80px;
+ /* background-color: grey; */
+ background-color: black;
+ color: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 50px;
+ font-weight: bolder;
+ margin-bottom: 30px;
+ margin-top: 10px;
+}
+
+.projecttwo{
+
+  width: 100%;
+  height: 400px;
+  /* background-color: indianred; */
+  background-color: black;
+  /* display: flex; */
+  
+}
+
+.bootstrapcard{
+  /* height: 100px;
+  width: 100px; */
+
+}
+.btncard1{
+  background-color: red;
+  font-weight: bold;
+}
+
+
+
+@media  (max-width: 1100px){
+  .projectone{
+       margin-top: 200px;
+  }
+
+  .projecttwo{
+
+  }
+}
+@media  (max-width: 1000px){
+.projectone{
+  font-size: 40px;
+}
+}
+@media  (max-width: 420px){
+  .projectone{
+       margin-top: 300px;
+  }
+}
+
+@media  (max-width: 1000px){
+  .card1{
+       width: 100%;
+       
+  }
+  .card2{
+    width: 100%;
+}
+.card3{
+  width: 100%;
+}
+.card4{
+  width: 100%;
+}
+}
+
+@media  (max-width: 500px){
+
+.projectone{
+  margin-top:350px;
+}
+}
+/* my projects portio ends  */
+
+
+/* contact us portion start */
+   .maincontactus{
+    /* border: 5px solid blue; */
+    /* background-color: grey; */
+    background-color: black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+   }
+   .contactusone{
+    /* border: 2px solid white; */
+     /* background-color: orange;  */
+     background-color: black; 
+    width: 40%;
+    height: 500px;
+   }
+
+   .contactustwo{
+    /* border: 2px solid white; */
+    /* background-color: palegreen; */
+    background-color: black;
+    width: 40%;
+    height: 500px;
+   }
+
+ 
+   .formheading{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 50px;
+   }
+   .fname{
+     color: white;
+     font-size: 20px;
+     /* font-weight: bold; */
+    
+   }
+   .lname{
+    color: white;
+    font-size: 20px;
+   }
+   .fmessage{
+    color: white;
+    font-size: 20px;
+    
+   }
+
+
+@media  (max-width: 1100px) {
+  .maincontactus{
+     margin-top: 100px;
+
+ }
+}
+@media  (max-width: 1000px) {
+  .maincontactus{
+     margin-top: 4150px;
+
+ }
+}
+
+@media  (max-width: 950px) {
+  .maincontactus{
+     margin-top: 3950px;
+
+ }
+}
+
+@media  (max-width: 900px) {
+  .maincontactus{
+     margin-top: 3740px;
+
+ }
+}
+
+@media  (max-width: 850px) {
+  .maincontactus{
+     margin-top: 3550px;
+
+ }
+}
+
+@media  (max-width: 800px) {
+  .maincontactus{
+     margin-top: 3350px;
+
+ }
+}
+
+@media  (max-width: 750px) {
+  .maincontactus{
+     margin-top: 3150px;
+
+ }
+}
+
+@media  (max-width: 700px) {
+  .maincontactus{
+     margin-top: 2950px;
+
+ }
+}
+
+@media  (max-width: 650px) {
+  .maincontactus{
+     margin-top: 2850px;
+
+ }
+}
+
+@media  (max-width: 600px) {
+  .maincontactus{
+     margin-top: 2630px;
+
+ }
+}
+
+@media  (max-width: 550px) {
+  .maincontactus{
+     margin-top: 2450px;
+
+ }
+}
+
+@media  (max-width: 480px) {
+  .maincontactus{
+     margin-top: 2300px;
+
+ }
+}
+
+@media  (max-width: 440px) {
+  .maincontactus{
+     margin-top: 2150px;
+
+ }
+}
+
+
+@media  (max-width: 600px) {
+
+
+  .maincontactus{
+    /* margin-top: 2630px; */
+    flex-direction: column-reverse;
+  }
+ .contactusone{
+    width: 100%;
+ }
+
+ .contactustwo{
+width: 100%;
+
+ }
+}
+
+/* contact us portion End */
+
+/* old portfolio website */
+
+/* contact start */
+.contact{
+  /* border: 2px solid red; */
+  margin-top: -80px;
+  background-color: black;
+  width: 100%;
+  height: 450px;
+
+}
+
+.outer{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 400px;
+    /* margin-left: 150px; */
+    margin-top:48px;
+}
+
